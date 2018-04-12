@@ -1,0 +1,8 @@
+#fundo{
+	background: url(../img/fundo.jpeg)fixed;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+#fundo h1, p{
+	color: #fff;
+}

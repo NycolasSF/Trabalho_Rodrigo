@@ -12,7 +12,7 @@ class contatoView {
     this.controller = controller;
     this.model = model;
     /*button criar*/
-    this.button = document.querySelector('#btn_add');
+    this.button = document.querySelector('#btn_salvar');
     this.button.onclick = this.createContato.bind(this);
   }
 
@@ -25,8 +25,6 @@ class contatoView {
       this.controller.createContato(this.nome.value);
       //this.controller.createContato(this.ft_perfil);
       this.addContato();
-
-
     }
     catch(err){
       alert('ERRO: ' +err);
@@ -45,7 +43,7 @@ class contatoView {
       this.list.innerHTML +=
      ' <div class="col-md-4">'+
               '<div class="card mb-4 box-shadow">'+
-                '<img class="card-img-top" src="" alt="Sem Foto de Perfil">'+
+                '<img class="card-img-top" data-src="" alt="Sem Foto de Perfil">'+
                ' <div class="card-body">'+
                 '<div class="text-block">'+
                   '<h4>'+contato.mostrar()+'</h4>'+

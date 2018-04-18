@@ -1,4 +1,4 @@
-var myText = document.getElementById("comment");
+var myText = document.getElementById("descricao");
 var wordCount = document.getElementById("mostrarCaractere");
 myText.addEventListener("keyup",function(){
 	var characters = myText.value.split('');

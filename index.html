@@ -11,9 +11,6 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css_bootstrap/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="album.css" rel="stylesheet">
   </head>
 
   <body >
@@ -30,8 +27,8 @@
             <div class="col-sm-4 offset-md-1 py-4">
               <h4 class="text-white">Contato</h4>
               <ul class="list-unstyled">
-                <li><a href="https://twitter.com/Nycolas_SF" class="text-white">Twitter - NycolasSF</a></li>
-                <li><a href="https://twitter.com/93quartos" class="text-white">Twitter - EmilySuelen</a></li>
+                <li><a href="https://twitter.com/Nycolas_SF" target="_blanck" class="text-white">Twitter - NycolasSF</a></li>
+                <li><a href="https://twitter.com/93quartos" target="_blanck" class="text-white">Twitter - EmilySuelen</a></li>
               </ul>
             </div>
           </div>
@@ -41,7 +38,6 @@
         <div class="container d-flex justify-content-between">
           <a href="#" class="navbar-brand d-flex align-items-center">
             <img width="20" height="20" src="img/favicon.png"></img>
-            <!--svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg-->
             <strong>OCONTATINhO</strong>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,7 +51,7 @@
 
       <section class="jumbotron text-center" id="fundo">
         <div class="container">
-          <h1 id="btn_adicionar" class="jumbotron-heading">Adicionar um Contatinho</h1>
+          <h1 id="title_adicionar" class="jumbotron-heading">Adicionar um Contatinho</h1>
           <p class="lead">Organize seus contatinhos aqui</p>
           <p>
             <button id="myBtn"  class="btn btn-primary my-2">Adicionar</button>
@@ -64,14 +60,14 @@
         </div>
       </section>
 
-<!---OPEN MODAL--->
+<!--OPEN MODAL-->
         <!-- Modal content -->
         <div id="myModal" class="modal">
           <!-- Modal content -->
           <div class="modal-content">
             <span class="close">&times;</span>
             <div class="container">
-              <form>
+              <form action="index.html" method="post">
                   <div class="form-group row">
                     <label for="Nome" class="col-sm-2 col-form-label ">Nome</label>
                     <div class="col-sm-10">
@@ -87,7 +83,7 @@
                   <!--Descrição-->
                     <div id="descricao_textArea" class="form-group row">
                       <label for="descricao" class="col-sm-2 col-form-label">Descrição</label>
-                      <textarea class="form-control" rows="5" id="comment" maxlength="51" ></textarea>
+                      <textarea id="descricao" class="form-control" rows="5" maxlength="51" ></textarea>
                       <div class="caracteres">
                         <p id="mostrarCaractere" class="text-muted">0</p>
                          <p id="Mcaractere" class="text-muted"> Caracteres</p>
@@ -96,12 +92,11 @@
                   <!--FOTO DE perfil-->
                     <div class="form-group perfil">
                          <label for="exampleFormControlFile1">Escolha uma Foto da pessoinha...</label>
-                         <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                         <input type="file" class="form-control-file" id="File_ft">
                     </div>
-
                   <div class="form-group row">
                     <div class="col-sm-10">
-                      <button type="submit" id="salvar" onclick="salvar()" class="btn btn-primary">Salvar</button>
+                      <button type="button"  id="btn_add" class="btn btn-primary">Salvar</button>
                     </div>
                   </div>
                 </form>
@@ -112,145 +107,8 @@
 <!--CONTATINHOS-->
       <div class="album py-5 bg-light">
         <div class="container">
+          <div id="lista_contato" class="row">
 
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="http://www.cruzeirodovale.com.br/imgs/noticias/31317/images/solidao.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -262,20 +120,23 @@
         <p class="float-right">
           <a href="#">Back to top</a>
         </p>
-        <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+        <p class="text-muted">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
         <p>New to Bootstrap? <a href="">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
       </div>
     </footer>
-
+    <!--MVC - JS -->
+    <script type="text/javascript" src="js/MVC/Contato.js"></script>
+    <script type="text/javascript" src="js/MVC/contatoModel.js"></script>
+    <script type="text/javascript" src="js/MVC/contatoController.js"></script>
+    <script type="text/javascript" src="js/MVC/contatoVIEW.js"></script>
+    <script type="text/javascript" src="js/MVC/app.js"></script>
+    <!--MEUS SCRIPTS - EFEITOS -->
+    <script type="text/javascript" src="js/Qtdcaractere.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script type="text/javascript" src="js/Qtdcaractere.js"></script>
-    <script type="text/javascript" src="js/modal.js"></script>
-    <script src="js/vendor/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/vendor/holder.min.js"></script>
   </body>
 </html>

@@ -6,9 +6,12 @@
 #fundo h1, p{
 	color: #fff;
 }
-#btn_adicionar{
-	background: rgba(231, 76, 60,.9);
-
+#title_adicionar{
+	background: rgba(52, 152, 219,.8);
+}
+#myBtn{
+    background: rgba(231, 76, 60,1);
+    border: none;
 }
 
 /*MODAL*/
@@ -33,7 +36,6 @@
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-
 }
 
 /* The Close Button */
@@ -68,5 +70,19 @@
 #descricao_textArea textarea{
 	width: 50%;
 	margin-left: 18%;
+}
+/* Container holding the image and the text */
+.container {
+    position: relative;
+}
 
+/* Bottom right text */
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
 }

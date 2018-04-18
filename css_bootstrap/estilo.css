@@ -18,6 +18,10 @@
 #myModal form{
 	margin-left: 5%;
 }
+#myModalP form{
+	margin-left: 5%;
+	padding: 1rem;
+}
 .modal-header h4{
 	text-align: right;
 	margin-right: 50%;
@@ -38,7 +42,7 @@
 /* Container holding the image and the text */
 .container {
     position: relative;
-	width:100%;
+		width:100%;
 }
 
 /* Bottom right text */

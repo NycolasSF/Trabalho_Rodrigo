@@ -1,37 +1,12 @@
-## Welcome to GitHub Pages
+# Bem VINDOU
 
-You can use the [editor on GitHub](https://github.com/NycolasSF/Trabalho_Rodrigo/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Para que serve?
+É como se fosse um sistema de cadastro de contatos usando o modelo MVC. Contudo as informações estão sendo salvas em um vetor.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## TESTE AGORA
+Acesse: [link to test](https://nycolassf.github.io/Trabalho_Rodrigo/) para testar
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/NycolasSF/Trabalho_Rodrigo/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Por que foi feito?
+Foi realizado para obtenção de nota em ARQUITETURAS, METODOLOGIAS E FERRAMENTAS DE
+APOIO 1.
+Ministrada pelo Rodrigo Devigo: [link](https://github.com/rodrigodevigo)

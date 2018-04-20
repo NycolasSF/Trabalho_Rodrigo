@@ -20,6 +20,4 @@ class contatoModel{
 		this.data.splice(index, 1);
 		return this;
 	}
-
-
 }

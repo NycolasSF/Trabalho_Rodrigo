@@ -9,6 +9,8 @@ class contatoController{
 	removeContato(code){
 		this.model.delete(code);
 	}
-	/*Falta colocar o Já peguei*/
-
+	testPeguei(code) {
+		let peguei = this.model.find(code);
+		peguei.test_peguei = true;
+	}
 }

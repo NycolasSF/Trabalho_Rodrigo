@@ -58,3 +58,6 @@
 .card-text{
 	color: #000;
 }
+.card-img-top{
+	cursor: pointer;
+}
